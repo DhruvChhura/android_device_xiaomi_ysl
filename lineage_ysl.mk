@@ -32,6 +32,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit some common flags
 TARGET_BOOT_ANIMATION_RES := 720
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Official
+CIPHER_OFFICIAL := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
@@ -43,6 +47,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cipher.maintainer=Dhruv
 
 # Build fingerprint
 BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys
