@@ -187,9 +187,6 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
-# We modify several neverallows, so let the build proceed
-SELINUX_IGNORE_NEVERALLOWS := true
-
 # Treble
 BOARD_VNDK_VERSION := current
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
