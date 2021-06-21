@@ -283,9 +283,13 @@ vendor.qc2.use.bqpool=1
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.sf.disable_blurs=1
 
+# ZRAM
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
+
 # Iorap
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.iorapd.enable=true \
 iorapd.perfetto.enable=true \
 iorapd.readahead.enable=true
-
